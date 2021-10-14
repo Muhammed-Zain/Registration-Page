@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&family=Varela+Round&family=Manrope&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Payment</title>
+  </head>
+  <body>
+    <h1 class="heading">Registration Form</h1>
+    <div class="container">
+      <hr>
+      <h3 class="sub-heading">Personal Details</h3>
+      
+      <form>
+        <div class="first">
+          <label class="first-name">First Name:</label>
+          <input
+            type="text"
+            placeholder="Choosa"
+            class="first-button"
+            id="first-button"
+            required
+          />
+        </div>
+        <div class="second">
+          <p class="last-name">
+            Last name: </p>
+            <input
+              type="text"
+              placeholder="Pissa"
+              class="last-button"
+              id="last-button"
+              required
+            />
+        </div>
+        <div class="gender">
+          <fieldset>
+            <legend>Gender</legend>
+            <p class="male">
+              <input type="radio" name="gender" id="male" /> Male
+            </p>
+              <p class="female"><input type="radio" name="gender" id="female" /> Female
+            </p>
+          </fieldset>
+        </div>
+        <div class="email">
+          <p class="gemail">
+            Email address: </p>
+            <input type="email" placeholder="Choosapissa@gmail.com" id="email" required />
+          
+        </div>
+        <div class="dob">
+          <p class="birth">
+            Date of Birth:</p>
+            <input type="date" placeholder="none" min="2001-01-01" id="dob" required />
+          
+        </div>
+        <div class="number">
+          <p class="no">
+            Phone number:</p>
+            <input type="number" placeholder="9999999999" minlength="10" id="number" />
+          
+        </div>
+        <div class="username">
+          <p class="usename">Username: </p>
+          <input type="text" placeholder="choosa05" id="username" required />
+        </div>
+        <div class="password">
+          <p class="pass">
+            Password: </p><input type="password" placeholder="*********" id="password" required />
+          
+        </div>
+        <hr class="ruler2">
+        <h2 class="payment">Payment Information</h2>
+        <div class="card-type">
+          <p class="cartype">
+            Card Type: </p>
+            <select
+              name="card_type"
+              id="card_type"
+              placeholder="Select a card type"
+              required
+            >
+              <option value="Select a Card Type">Select A Card Type</option>
+              </option>
+              <option value="visa">Visa</option>
+              <option value="google-pay">Google Pay</option>
+              <option value="paytm">Paytm</option>
+              <option value="paypal">Paypal</option>
+            </select>
+          
+        </div>
+        <div class="card_number">
+          <p class="carno">
+            Card Number: </p>
+            <input type="number" name="card_number" id="card_number" required />
+          
+        </div>
+        <div class="expiry">
+          <p class="exp">Expiration Date: </p> <input type="date" name="expiry" id="expiry" required />
+        </div>
+        <div class="cvv">
+          <p class="crazy">CVV: </p><input type="password" name="cvv" id="cvv" required />
+        </div>
+        <div class="pay">
+          <input type="submit" value="Pay Now" id="pay" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
